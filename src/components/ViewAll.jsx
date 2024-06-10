@@ -5,7 +5,7 @@ import NavBar from './NavBar'
 const ViewAll = () => {
     const [data,changedata] =useState([])
     const fetchData=()=>{
-        axios.get("https://anishpdm.github.io/dummy-api-new/student.json").then(
+        axios.get("https://courseapplogix.onrender.com/getdata").then(
             (Response)=>{
                 changedata(Response.data)
             }
